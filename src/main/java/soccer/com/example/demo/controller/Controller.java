@@ -1,10 +1,11 @@
-package soccer.com.example.controller;
+package soccer.com.example.demo.controller;
 
 import soccer.com.example.dto.Goals;
+import soccer.com.example.demo.entity.Entities;
+import soccer.com.example.demo.service.Services;
 import soccer.com.example.dto.Assists;
 import soccer.com.example.dto.PlayerDTO;
-import soccer.com.example.entity.Entities;
-import soccer.com.example.service.Services;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -39,7 +40,7 @@ public class Controller {
     }
 
     @GetMapping("/age")
-    public ResponseEntity<List<Entities>> getBySalary(@RequestParam Integer age){
+    public ResponseEntity<List<Entities>> getByAge(@RequestParam Integer age){
         return ResponseEntity.ok().body(service.getByAge(age));
     }
     

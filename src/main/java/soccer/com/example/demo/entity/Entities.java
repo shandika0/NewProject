@@ -1,4 +1,4 @@
-package soccer.com.example.entity;
+package soccer.com.example.demo.entity;
 
 import javax.persistence.*;
 

@@ -1,15 +1,17 @@
-package com.example.repository;
+package soccer.com.example.demo.repository;
 
 import java.util.List;
-import soccer.com.example.entity.Entities;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import soccer.com.example.demo.entity.Entities;
+
 
 @Repository
 public interface PlayerRepo extends JpaRepository<Entities, Long> {
-    @Query(value = "select * from players p where lower(u.name) like %:name%", nativeQuery = true)
+    @Query(value = "select * from players p where lower(p.name) like %:name%", nativeQuery = true)
     List<Entities> getPlayersByName(String name);
 
     @Query(value = "select * from  players p where p.age <= :age", nativeQuery = true)

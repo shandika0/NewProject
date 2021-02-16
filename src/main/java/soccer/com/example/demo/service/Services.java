@@ -1,17 +1,16 @@
-package soccer.com.example.service;
+package soccer.com.example.demo.service;
 
 import soccer.com.example.dto.Goals;
+import soccer.com.example.demo.entity.Entities;
+import soccer.com.example.demo.interfaces.Interface;
 import soccer.com.example.dto.Assists;
 import soccer.com.example.dto.PlayerDTO;
-import soccer.com.example.entity.Entities;
-import soccer.com.example.interfaces.Interface;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.repository.PlayerRepo;
-
+import soccer.com.example.demo.repository.PlayerRepo;
 import java.util.ArrayList;
 import java.util.List;
 

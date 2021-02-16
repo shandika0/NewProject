@@ -4,14 +4,11 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 
-import com.example.repository.PlayerRepo;
-
-import soccer.com.example.entity.Entities;
+import soccer.com.example.demo.entity.Entities;
+import soccer.com.example.demo.repository.PlayerRepo;
 
 @SpringBootApplication
-@ComponentScan("com.example.repository")
 public class SoccerApplication {
 
 	public static void main(String[] args) {

@@ -1,9 +1,10 @@
-package soccer.com.example.interfaces;
+package soccer.com.example.demo.interfaces;
 
 import soccer.com.example.dto.PlayerDTO;
 import soccer.com.example.dto.Goals;
+import soccer.com.example.demo.entity.Entities;
 import soccer.com.example.dto.Assists;
-import soccer.com.example.entity.Entities;
+
 import java.util.List;
 
 public interface Interface {
